@@ -12,16 +12,13 @@
   };
  };
 alert([
-    greenCounter + yellowCounter + deniedCounter,
-    " (",
-    greenCounter, "+", yellowCounter, "+", deniedCounter,
-    ") / ",
-    redCounter + yellowCounter + tealCounter + deniedCounter + greenCounter,
-    " (",
-    redCounter, "+", tealCounter, "+", (yellowCounter + deniedCounter + greenCounter),
-    ") - ",
-    greenCounter + yellowCounter + deniedCounter,
-    "/",
-    redCounter + yellowCounter + tealCounter + deniedCounter + greenCounter
+    greenCounter + yellowCounter + deniedCounter
+        + " (" + greenCounter + "+" + yellowCounter + "+" + deniedCounter + ") / "
+        + (redCounter + yellowCounter + tealCounter + deniedCounter + greenCounter)
+        + " (" + redCounter + "+" + tealCounter + "+" + (yellowCounter + deniedCounter + greenCounter) + ")"
+        + " - "
+        + (greenCounter + yellowCounter + deniedCounter)
+        + "/"
+        + (redCounter + yellowCounter + tealCounter + deniedCounter + greenCounter)
 ]);
 }

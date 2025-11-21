@@ -11,7 +11,7 @@
    } else tealCounter++;
   };
  };
-alert([
+navigator.clipboard.writeText([
     greenCounter + yellowCounter + deniedCounter
         + " (" + greenCounter + "+" + yellowCounter + "+" + deniedCounter + ") / "
         + (redCounter + yellowCounter + tealCounter + deniedCounter + greenCounter)
